@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Script is running");
     const form = document.getElementById("travelForm");
 
     form.addEventListener("submit", async (event) => {
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             destination: document.getElementById("destination").value,
             travelDates: {
                 departure: document.getElementById("departure-date").value,
-                return: document.getElementById("Return-date").value,
+                return: document.getElementById("return-date").value,
             },
             preferences: {
                 budget: document.getElementById("budget").value,
