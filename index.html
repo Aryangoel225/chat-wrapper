@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat wrapper</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chat wrapper</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <form action="/submit" method="post"></form>
+   <div id="container">
+       <form action="/submit" method="post"></form>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+       <!--Questions Start-->
 
-        <label for="What types of traveling do you like to do?">Name:</label>
-        <input type="text" id="travelType" name="travelType" required>
+       <!--name-->
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+       <br><br>
+
+       <!--travel type-->
+       <label for="travelType">What kind of travel do you like to do?:</label>
+       <input type="text" id="travelType" name="travelType" required>
+       <br><br>
+
+       <!--destination-->
+       <label for="destination">Where would you like to go?:</label>
+       <input type="text" id="destination" name="destination" required>
+       <br><br>
+
+        <!--Date Picker-->
+       <label for="departure-date">Departure-Date</label>
+       <input type="date" id="departure-date" name ="departure-date">
+       <br><br>
+
+       <label for="return-date">Return-Date</label>
+       <input type="date" id="Return-date" name ="Return-date">
+       <br><br>
+
+       <!--budget-->
+       <label for="budget">The max you would like to spend (USD):</label>
+       <input type="text" id="budget" name="budget" required>
+       <br><br>
+       
+    <!-- Dropdown Menu for sheltor -->
+       <label for="accommodation">Accommodation Type:</label>
+       <select id="accommodation" name="accommodation">
+       <option value="hotel">Hotel</option>
+       <option value="hostel">Hostel</option>
+       <option value="resort">Resort</option>
+       <option value="airbnb">Airbnb</option>
+       </select>
+       <br><br>
+
+        <!--Travel type -->
+        <h3>Please select your preference for type of vacation style</h1>
+        <input type="radio" id="vacation-type" name="vacation-type" value="relaxation">
+        <label for="relaxation">Relaxation</label>
         <br><br>
-    </div>
-    <script src="index.js"></script>
+        <input type="radio" id="adventure" name="vacation-type" value="adventure">
+        <label for="adventure">Adventure</label>
+        <br><br>
+        <input type="radio" id="Religious" name="vacation-type" value="Religious">
+        <label for="Religious">Religious</label>
+        <br><br>
+        <input type="radio" id="Service-projects" name="vacation-type" value="Service-projects">
+        <label for="Service-projects">Service projects</label>
+        <br><br>
+        <input type="radio" id="Sightseeing" name="vacation-type" value="Sightseeing">
+        <label for="Sightseeing">Sightseeing</label>
+        <br><br>
+
+        <!-- Check box for types of activites-->
+        <h3>Please select your preference for activites (Select mulitple if you wish)</h1>
+         <input type="checkbox" id="hiking" name="activites" value="hiking">
+         <label for="hiking">Hiking</label>
+         <br>
+
+         <input type="checkbox" id="snorkeling" name="activities" value="snorkeling">
+         <label for="snorkeling">Snorkeling</label>
+         <br>
+
+         <input type="checkbox" id="museums" name="activities" value="museums">
+         <label for="museums">Museums</label>
+         <br>
+
+        <input type="checkbox" id="food-tours" name="activities" value="food-tours">
+        <label for="food-tours">Food Tours</label>
+        <br>
+        
+        <input type="checkbox" id="beach-relaxing" name="activities" value="beach-relaxing">
+        <label for="beach-relaxing">Beach Relaxing</label>
+        <br>
+
+        <input type="checkbox" id="adventure-sports" name="activities" value="adventure-sports">
+        <label for="adventure-sports">Adventure Sports</label>
+        <br>
+
+        <input type="checkbox" id="nightlife" name="activities" value="nightlife">
+        <label for="nightlife">Nightlife</label>
+        <br>
+        <input type="checkbox" id="sightseeing" name="activities" value="sightseeing">
+        <label for="sightseeing">Sightseeing</label>
+        <br>
+                <input type="checkbox" id="shopping" name="activities" value="shopping">
+        <label for="shopping">Shopping</label>
+        <br>
+         <!-- Buttons-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+   </div>
+   <script src="index.js"></script>
 </body>
 </html>
